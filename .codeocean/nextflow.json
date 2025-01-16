@@ -1,0 +1,48 @@
+{
+	"version": 1,
+	"processes": [
+		{
+			"name": "capsule_dynamicrouting_encoding_io_1",
+			"capsule": {
+				"id": "82c400eb-a0b8-45b4-abce-43db82b77478",
+				"name": "dynamicrouting-encoding-io",
+				"slug": "9348254",
+				"commit": "7b4c43f0aa248a4970ce1b64244b70972a99a759",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "ZPjEDHhnVKFQLPP4",
+					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.261",
+					"source_path": "dynamicrouting_datacube_v0.0.261/nwb"
+				},
+				{
+					"id": "qUesFaxW74NwGV4A",
+					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.261",
+					"source_path": "dynamicrouting_datacube_v0.0.261/session_table.parquet",
+					"collect": true
+				},
+				{
+					"id": "gMlfiYOPJCLzFlDb",
+					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.261",
+					"source_path": "dynamicrouting_datacube_v0.0.261/session_table.csv",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "82c400eb-a0b8-45b4-abce-43db82b77478"
+			}
+		}
+	]
+}

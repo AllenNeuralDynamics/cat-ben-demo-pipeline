@@ -1,0 +1,51 @@
+{
+	"edges": [
+		{
+			"id": "reactflow__edge-b59511ab-e888-4f96-8772-5627adc12e31-capsule_dynamicrouting_encoding_io_1",
+			"selected": false,
+			"source": "b59511ab-e888-4f96-8772-5627adc12e31",
+			"target": "capsule_dynamicrouting_encoding_io_1"
+		},
+		{
+			"id": "reactflow__edge-capsule_dynamicrouting_encoding_io_1-results",
+			"source": "capsule_dynamicrouting_encoding_io_1",
+			"target": "results"
+		}
+	],
+	"nodes": [
+		{
+			"data": {
+				"capsule_id": "82c400eb-a0b8-45b4-abce-43db82b77478"
+			},
+			"id": "capsule_dynamicrouting_encoding_io_1",
+			"position": {
+				"x": 566.9333089192708,
+				"y": 262.39999389648443
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"id": "results",
+			"position": {
+				"x": 579.5999755859375,
+				"y": 561.0666605631511
+			},
+			"type": "results"
+		},
+		{
+			"id": "b59511ab-e888-4f96-8772-5627adc12e31",
+			"position": {
+				"x": 845.5999755859375,
+				"y": 87.7333272298177
+			},
+			"type": "dataset"
+		}
+	],
+	"timestamp": 1736992446351,
+	"viewport": {
+		"x": 0,
+		"y": 0,
+		"zoom": 0.75
+	}
+}
