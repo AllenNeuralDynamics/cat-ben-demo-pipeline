@@ -7,7 +7,8 @@
 				"id": "82c400eb-a0b8-45b4-abce-43db82b77478",
 				"name": "dynamicrouting-encoding-io",
 				"slug": "9348254",
-				"commit": "143ecad2abf6944d2f5110b1be35e841857f3485",
+				"commit": "845a797d8af88057185e7a28de520ec623c36cff",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -46,6 +47,8 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
+				"commit": "92a66f05bed6fc664ca19d9898a4b9a5e097ecf3",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -58,7 +61,8 @@
 					"source_id": "capsule_dynamicrouting_encoding_io_1",
 					"type": "capsule",
 					"name": "dynamicrouting-encoding-io",
-					"source_path": "full/"
+					"source_path": "full/",
+					"flatten": true
 				}
 			],
 			"results": {
@@ -71,6 +75,8 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
+				"commit": "92a66f05bed6fc664ca19d9898a4b9a5e097ecf3",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -79,19 +85,19 @@
 			},
 			"inputs": [
 				{
+					"id": "hMjnFVUUPJoP1feX",
+					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"collect": true
+				},
+				{
 					"id": "0CDMIDK9x5pd8Y8p",
 					"source_id": "capsule_dynamicrouting_encoding_io_1",
 					"type": "capsule",
 					"name": "dynamicrouting-encoding-io",
 					"source_path": "reduced/",
 					"flatten": true
-				},
-				{
-					"id": "hMjnFVUUPJoP1feX",
-					"source_id": "capsule_dynamicrouting_encoding_fit_2",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"collect": true
 				}
 			],
 			"results": {
