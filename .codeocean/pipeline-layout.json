@@ -31,7 +31,6 @@
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_fit_3",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_2",
 			"target": "capsule_dynamicrouting_encoding_fit_3"
 		}
@@ -64,7 +63,7 @@
 				"x": 612.4334016853388,
 				"y": -101.72992490488613
 			},
-			"selected": true,
+			"selected": false,
 			"type": "dataset"
 		},
 		{
@@ -92,10 +91,10 @@
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1737087237189,
+	"timestamp": 1737088721731,
 	"viewport": {
-		"x": 209.14183588743697,
-		"y": 86.15631945689393,
-		"zoom": 0.46009382531243775
+		"x": -623.2888596647986,
+		"y": -477.50937805564615,
+		"zoom": 1.602139755179246
 	}
 }
