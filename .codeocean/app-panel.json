@@ -1,0 +1,8 @@
+{
+	"version": 1,
+	"processes": [
+		"capsule_dynamicrouting_encoding_io_1",
+		"capsule_dynamicrouting_encoding_fit_2",
+		"capsule_dynamicrouting_encoding_fit_3"
+	]
+}

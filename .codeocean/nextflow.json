@@ -7,8 +7,7 @@
 				"id": "82c400eb-a0b8-45b4-abce-43db82b77478",
 				"name": "dynamicrouting-encoding-io",
 				"slug": "9348254",
-				"commit": "7b4c43f0aa248a4970ce1b64244b70972a99a759",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
+				"commit": "143ecad2abf6944d2f5110b1be35e841857f3485",
 				"app_panel": true
 			},
 			"resources": {
@@ -21,7 +20,7 @@
 					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
 					"type": "dataset",
 					"name": "dynamicrouting_datacube_v0.0.261",
-					"source_path": "dynamicrouting_datacube_v0.0.261/nwb"
+					"source_path": "dynamicrouting_datacube_v0.0.261/nwb/"
 				},
 				{
 					"id": "qUesFaxW74NwGV4A",
@@ -39,9 +38,64 @@
 					"source_path": "dynamicrouting_datacube_v0.0.261/session_table.csv",
 					"collect": true
 				}
+			]
+		},
+		{
+			"name": "capsule_dynamicrouting_encoding_fit_2",
+			"capsule": {
+				"id": "3f98e032-f938-4959-8577-a28f814dd973",
+				"name": "dynamicrouting-encoding-fit",
+				"slug": "5184476",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "64HkDqeeyjZKihZM",
+					"source_id": "capsule_dynamicrouting_encoding_io_1",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-io",
+					"source_path": "full/"
+				}
 			],
 			"results": {
-				"id": "82c400eb-a0b8-45b4-abce-43db82b77478"
+				"id": "3f98e032-f938-4959-8577-a28f814dd973"
+			}
+		},
+		{
+			"name": "capsule_dynamicrouting_encoding_fit_3",
+			"capsule": {
+				"id": "3f98e032-f938-4959-8577-a28f814dd973",
+				"name": "dynamicrouting-encoding-fit",
+				"slug": "5184476",
+				"app_panel": true
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "0CDMIDK9x5pd8Y8p",
+					"source_id": "capsule_dynamicrouting_encoding_io_1",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-io",
+					"source_path": "reduced/",
+					"flatten": true
+				},
+				{
+					"id": "hMjnFVUUPJoP1feX",
+					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "3f98e032-f938-4959-8577-a28f814dd973"
 			}
 		}
 	]
