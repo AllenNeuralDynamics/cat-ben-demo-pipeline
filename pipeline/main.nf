@@ -1,17 +1,17 @@
 #!/usr/bin/env nextflow
-// hash:sha256:590fa7da329b6fd9b76b34a2e2e2416469e09ec3fb717955e719d772a3115270
+// hash:sha256:d482e5bc0121bb0245b7d84cb760b60e9dda19b7d35c66c73ab5ed4f02187dd6
 
 nextflow.enable.dsl = 1
 
 dynamicrouting_datacube_v0_0_261_to_dynamicrouting_encoding_io_1 = channel.fromPath("../data/dynamicrouting_datacube_v0.0.261/nwb/*", type: 'any', relative: true)
 capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_2_2 = channel.create()
-capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_3 = channel.create()
-capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_4 = channel.create()
+capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_3 = channel.create()
+capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_4 = channel.create()
 
 // capsule - dynamicrouting-encoding-io
 process capsule_dynamicrouting_encoding_io_1 {
 	tag 'capsule-9348254'
-	container "$REGISTRY_HOST/capsule/82c400eb-a0b8-45b4-abce-43db82b77478:95b2a8c7192a5e2a894b5703fc8c8d57"
+	container "$REGISTRY_HOST/capsule/82c400eb-a0b8-45b4-abce-43db82b77478"
 
 	cpus 1
 	memory '8 GB'
@@ -21,7 +21,7 @@ process capsule_dynamicrouting_encoding_io_1 {
 
 	output:
 	path 'capsule/results/full/*' into capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_2_2
-	path 'capsule/results/reduced/*' into capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_3
+	path 'capsule/results/reduced/*' into capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_4
 
 	script:
 	"""
@@ -43,7 +43,7 @@ process capsule_dynamicrouting_encoding_io_1 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9348254.git" capsule-repo
-	git -C capsule-repo checkout d7b91288e360c5156a406e6a7747799971dfba03 --quiet
+	git -C capsule-repo checkout 2e4b4b1d7cf8ff99c490a7cff965a9a9710443d6 --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -59,19 +59,19 @@ process capsule_dynamicrouting_encoding_io_1 {
 // capsule - dynamicrouting-encoding-fit
 process capsule_dynamicrouting_encoding_fit_2 {
 	tag 'capsule-5184476'
-	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973:95b2a8c7192a5e2a894b5703fc8c8d57"
+	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973"
 
 	cpus 1
 	memory '8 GB'
 
-	publishDir "$RESULTS_PATH", saveAs: { filename -> filename.matches("capsule/results/outputs") ? new File(filename).getName() : null }
+	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
 
 	input:
 	path 'capsule/data/' from capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_2_2.flatten()
 
 	output:
-	path 'capsule/results/outputs/*'
-	path 'capsule/results/outputs/*' into capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_4
+	path 'capsule/results/*'
+	path 'capsule/results/outputs/*' into capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_3
 
 	script:
 	"""
@@ -89,7 +89,7 @@ process capsule_dynamicrouting_encoding_fit_2 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-5184476.git" capsule-repo
-	git -C capsule-repo checkout 1e7b56ca84e8581ca36495cceb77adb7ff35fa44 --quiet
+	git -C capsule-repo checkout 527423296338338eed77f83ceb32f0938f0d4abf --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -105,19 +105,19 @@ process capsule_dynamicrouting_encoding_fit_2 {
 // capsule - dynamicrouting-encoding-fit
 process capsule_dynamicrouting_encoding_fit_3 {
 	tag 'capsule-5184476'
-	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973:95b2a8c7192a5e2a894b5703fc8c8d57"
+	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973"
 
 	cpus 1
 	memory '8 GB'
 
-	publishDir "$RESULTS_PATH", saveAs: { filename -> filename.matches("capsule/results/outputs") ? new File(filename).getName() : null }
+	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
 
 	input:
-	path 'capsule/data/' from capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_3.flatten()
-	path 'capsule/data/' from capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_4.collect()
+	path 'capsule/data/' from capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_3
+	path 'capsule/data/' from capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_4.flatten()
 
 	output:
-	path 'capsule/results/outputs/*'
+	path 'capsule/results/*'
 
 	script:
 	"""
@@ -135,7 +135,7 @@ process capsule_dynamicrouting_encoding_fit_3 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-5184476.git" capsule-repo
-	git -C capsule-repo checkout 1e7b56ca84e8581ca36495cceb77adb7ff35fa44 --quiet
+	git -C capsule-repo checkout 527423296338338eed77f83ceb32f0938f0d4abf --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 

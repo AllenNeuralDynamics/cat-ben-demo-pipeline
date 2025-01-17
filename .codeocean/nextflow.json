@@ -7,8 +7,7 @@
 				"id": "82c400eb-a0b8-45b4-abce-43db82b77478",
 				"name": "dynamicrouting-encoding-io",
 				"slug": "9348254",
-				"commit": "d7b91288e360c5156a406e6a7747799971dfba03",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
+				"commit": "2e4b4b1d7cf8ff99c490a7cff965a9a9710443d6",
 				"app_panel": true
 			},
 			"resources": {
@@ -47,8 +46,7 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "1e7b56ca84e8581ca36495cceb77adb7ff35fa44",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
+				"commit": "527423296338338eed77f83ceb32f0938f0d4abf",
 				"app_panel": true
 			},
 			"resources": {
@@ -66,8 +64,7 @@
 				}
 			],
 			"results": {
-				"id": "3f98e032-f938-4959-8577-a28f814dd973",
-				"source_path": "outputs/"
+				"id": "3f98e032-f938-4959-8577-a28f814dd973"
 			}
 		},
 		{
@@ -76,8 +73,7 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "1e7b56ca84e8581ca36495cceb77adb7ff35fa44",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
+				"commit": "527423296338338eed77f83ceb32f0938f0d4abf",
 				"app_panel": true
 			},
 			"resources": {
@@ -86,25 +82,23 @@
 			},
 			"inputs": [
 				{
+					"id": "G7X39UKZ141tFgWJ",
+					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"source_path": "outputs/"
+				},
+				{
 					"id": "0CDMIDK9x5pd8Y8p",
 					"source_id": "capsule_dynamicrouting_encoding_io_1",
 					"type": "capsule",
 					"name": "dynamicrouting-encoding-io",
 					"source_path": "reduced/",
 					"flatten": true
-				},
-				{
-					"id": "G7X39UKZ141tFgWJ",
-					"source_id": "capsule_dynamicrouting_encoding_fit_2",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/",
-					"collect": true
 				}
 			],
 			"results": {
-				"id": "3f98e032-f938-4959-8577-a28f814dd973",
-				"source_path": "outputs/"
+				"id": "3f98e032-f938-4959-8577-a28f814dd973"
 			}
 		}
 	]
