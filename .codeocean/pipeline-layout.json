@@ -26,12 +26,32 @@
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_fit_3",
+			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_2",
 			"target": "capsule_dynamicrouting_encoding_fit_3"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-results",
+			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_3",
+			"target": "results"
+		},
+		{
+			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_plot_4",
+			"selected": false,
+			"source": "capsule_dynamicrouting_encoding_fit_2",
+			"target": "capsule_dynamicrouting_encoding_plot_4"
+		},
+		{
+			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-capsule_dynamicrouting_encoding_plot_4",
+			"selected": false,
+			"source": "capsule_dynamicrouting_encoding_fit_3",
+			"target": "capsule_dynamicrouting_encoding_plot_4"
+		},
+		{
+			"id": "xy-edge__capsule_dynamicrouting_encoding_plot_4-results",
+			"selected": false,
+			"source": "capsule_dynamicrouting_encoding_plot_4",
 			"target": "results"
 		}
 	],
@@ -51,10 +71,10 @@
 		{
 			"id": "results",
 			"position": {
-				"x": 731.239740823168,
-				"y": 638.7892560237442
+				"x": 746.918596709673,
+				"y": 1094.4615603154664
 			},
-			"selected": false,
+			"selected": true,
 			"type": "results"
 		},
 		{
@@ -89,12 +109,24 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7"
+			},
+			"id": "capsule_dynamicrouting_encoding_plot_4",
+			"position": {
+				"x": 704.0400407873865,
+				"y": 595.2239549330337
+			},
+			"selected": false,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1737134011313,
+	"timestamp": 1737492658757,
 	"viewport": {
-		"x": -360.3762764629721,
-		"y": -289.3474479920444,
-		"zoom": 1
+		"x": -134.20930860478916,
+		"y": -245.55609400228843,
+		"zoom": 0.46395869128403755
 	}
 }

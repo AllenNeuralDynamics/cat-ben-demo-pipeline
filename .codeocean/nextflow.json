@@ -8,6 +8,7 @@
 				"name": "dynamicrouting-encoding-io",
 				"slug": "9348254",
 				"commit": "2e4b4b1d7cf8ff99c490a7cff965a9a9710443d6",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -46,7 +47,8 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "527423296338338eed77f83ceb32f0938f0d4abf",
+				"commit": "7558454e7724a6c67b7b06fb3d1a79173e56f08a",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -73,7 +75,8 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "527423296338338eed77f83ceb32f0938f0d4abf",
+				"commit": "7558454e7724a6c67b7b06fb3d1a79173e56f08a",
+				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -99,6 +102,43 @@
 			],
 			"results": {
 				"id": "3f98e032-f938-4959-8577-a28f814dd973"
+			}
+		},
+		{
+			"name": "capsule_dynamicrouting_encoding_plot_4",
+			"capsule": {
+				"id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7",
+				"name": "dynamicrouting-encoding-plot",
+				"slug": "8924646",
+				"commit": "18b1d42faefb54b2789c183d6d1a947755fd55e3",
+				"image_tag": "a406851802baffe50ff4b55b9970dfb9"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "tFr4HqLaEThGVIQF",
+					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"source_path": "outputs/",
+					"target_path": "full/",
+					"collect": true
+				},
+				{
+					"id": "48YwlR0xQeoTwbRH",
+					"source_id": "capsule_dynamicrouting_encoding_fit_3",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"source_path": "outputs/",
+					"target_path": "reduced/",
+					"collect": true
+				}
+			],
+			"results": {
+				"id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7"
 			}
 		}
 	]
