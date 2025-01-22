@@ -47,7 +47,7 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "7558454e7724a6c67b7b06fb3d1a79173e56f08a",
+				"commit": "d92d7bafb7fa3a88388fd6f50c38559aadd33c53",
 				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
@@ -64,10 +64,7 @@
 					"source_path": "full/",
 					"flatten": true
 				}
-			],
-			"results": {
-				"id": "3f98e032-f938-4959-8577-a28f814dd973"
-			}
+			]
 		},
 		{
 			"name": "capsule_dynamicrouting_encoding_fit_3",
@@ -75,7 +72,7 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "7558454e7724a6c67b7b06fb3d1a79173e56f08a",
+				"commit": "d92d7bafb7fa3a88388fd6f50c38559aadd33c53",
 				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
@@ -99,10 +96,7 @@
 					"source_path": "reduced/",
 					"flatten": true
 				}
-			],
-			"results": {
-				"id": "3f98e032-f938-4959-8577-a28f814dd973"
-			}
+			]
 		},
 		{
 			"name": "capsule_dynamicrouting_encoding_plot_4",
@@ -110,8 +104,8 @@
 				"id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7",
 				"name": "dynamicrouting-encoding-plot",
 				"slug": "8924646",
-				"commit": "18b1d42faefb54b2789c183d6d1a947755fd55e3",
-				"image_tag": "a406851802baffe50ff4b55b9970dfb9"
+				"commit": "c4133ae4039a66ea4640b41a7427e6f8c9bcc061",
+				"image_tag": "247f7a61917d90455bc5e86956cc69f0"
 			},
 			"resources": {
 				"cpus": 1,

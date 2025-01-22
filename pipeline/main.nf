@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:a9f388f2bca2170e756f2d03a86251b461398d310761abf02f01d010703ec174
+// hash:sha256:d59e9cbbc09a08a38caeaee5631d6037ce2f0e76723ed6c9a31c21dc25a60640
 
 nextflow.enable.dsl = 1
 
@@ -66,13 +66,10 @@ process capsule_dynamicrouting_encoding_fit_2 {
 	cpus 1
 	memory '8 GB'
 
-	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
-
 	input:
 	path 'capsule/data/' from capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_2_2.flatten()
 
 	output:
-	path 'capsule/results/*'
 	path 'capsule/results/outputs/*' into capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_3
 	path 'capsule/results/outputs/*' into capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_plot_4_5
 
@@ -92,7 +89,7 @@ process capsule_dynamicrouting_encoding_fit_2 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-5184476.git" capsule-repo
-	git -C capsule-repo checkout 7558454e7724a6c67b7b06fb3d1a79173e56f08a --quiet
+	git -C capsule-repo checkout d92d7bafb7fa3a88388fd6f50c38559aadd33c53 --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -113,14 +110,11 @@ process capsule_dynamicrouting_encoding_fit_3 {
 	cpus 1
 	memory '8 GB'
 
-	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
-
 	input:
 	path 'capsule/data/' from capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_3
 	path 'capsule/data/' from capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_4.flatten()
 
 	output:
-	path 'capsule/results/*'
 	path 'capsule/results/outputs/*' into capsule_dynamicrouting_encoding_fit_3_to_capsule_dynamicrouting_encoding_plot_4_6
 
 	script:
@@ -139,7 +133,7 @@ process capsule_dynamicrouting_encoding_fit_3 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-5184476.git" capsule-repo
-	git -C capsule-repo checkout 7558454e7724a6c67b7b06fb3d1a79173e56f08a --quiet
+	git -C capsule-repo checkout d92d7bafb7fa3a88388fd6f50c38559aadd33c53 --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -155,7 +149,7 @@ process capsule_dynamicrouting_encoding_fit_3 {
 // capsule - dynamicrouting-encoding-plot
 process capsule_dynamicrouting_encoding_plot_4 {
 	tag 'capsule-8924646'
-	container "$REGISTRY_HOST/capsule/0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7:a406851802baffe50ff4b55b9970dfb9"
+	container "$REGISTRY_HOST/capsule/0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7:247f7a61917d90455bc5e86956cc69f0"
 
 	cpus 1
 	memory '8 GB'
@@ -185,7 +179,7 @@ process capsule_dynamicrouting_encoding_plot_4 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8924646.git" capsule-repo
-	git -C capsule-repo checkout 18b1d42faefb54b2789c183d6d1a947755fd55e3 --quiet
+	git -C capsule-repo checkout c4133ae4039a66ea4640b41a7427e6f8c9bcc061 --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
