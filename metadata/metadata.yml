@@ -1,2 +1,5 @@
 metadata_version: 1
 name: dynamicrouting-encoding-pipeline
+authors:
+- name: Ben Hardcastle
+- name: Shailaja Akella
