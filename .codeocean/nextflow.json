@@ -7,7 +7,7 @@
 				"id": "82c400eb-a0b8-45b4-abce-43db82b77478",
 				"name": "dynamicrouting-encoding-io",
 				"slug": "9348254",
-				"commit": "2e4b4b1d7cf8ff99c490a7cff965a9a9710443d6",
+				"commit": "ee8eb2966b709214d271604b368faceacc2b0564",
 				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
@@ -47,7 +47,7 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "b0b6ff8f0399bf9d59a8da8a0aa4c70d38b29f52",
+				"commit": "13c37cfa40784c24d86fed4e72d99692737b853f",
 				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
@@ -72,7 +72,7 @@
 				"id": "3f98e032-f938-4959-8577-a28f814dd973",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
-				"commit": "b0b6ff8f0399bf9d59a8da8a0aa4c70d38b29f52",
+				"commit": "13c37cfa40784c24d86fed4e72d99692737b853f",
 				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
@@ -86,7 +86,8 @@
 					"source_id": "capsule_dynamicrouting_encoding_fit_2",
 					"type": "capsule",
 					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/"
+					"source_path": "outputs/",
+					"collect": true
 				},
 				{
 					"id": "0CDMIDK9x5pd8Y8p",
