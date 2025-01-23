@@ -37,9 +37,26 @@
 			"target": "capsule_dynamicrouting_encoding_plot_4"
 		},
 		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_plot_4-results",
+			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_filter_pipeline_placeholder_files_5",
+			"selected": false,
+			"source": "capsule_dynamicrouting_encoding_fit_2",
+			"target": "capsule_filter_pipeline_placeholder_files_5"
+		},
+		{
+			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-capsule_filter_pipeline_placeholder_files_5",
+			"selected": false,
+			"source": "capsule_dynamicrouting_encoding_fit_3",
+			"target": "capsule_filter_pipeline_placeholder_files_5"
+		},
+		{
+			"id": "xy-edge__capsule_dynamicrouting_encoding_plot_4-capsule_filter_pipeline_placeholder_files_5",
 			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_plot_4",
+			"target": "capsule_filter_pipeline_placeholder_files_5"
+		},
+		{
+			"id": "xy-edge__capsule_filter_pipeline_placeholder_files_5-results",
+			"source": "capsule_filter_pipeline_placeholder_files_5",
 			"target": "results"
 		}
 	],
@@ -59,8 +76,8 @@
 		{
 			"id": "results",
 			"position": {
-				"x": 753.3846896105244,
-				"y": 881.0804945873715
+				"x": 756.5504242917536,
+				"y": 1358.551363533942
 			},
 			"selected": false,
 			"type": "results"
@@ -80,8 +97,8 @@
 			},
 			"id": "capsule_dynamicrouting_encoding_fit_2",
 			"position": {
-				"x": 424.8762764629721,
-				"y": 354.8474479920444
+				"x": 308.7595803149575,
+				"y": 377.2790824751836
 			},
 			"selected": true,
 			"type": "capsule"
@@ -92,8 +109,8 @@
 			},
 			"id": "capsule_dynamicrouting_encoding_fit_3",
 			"position": {
-				"x": 944.8089683204721,
-				"y": 357.63051162663567
+				"x": 1099.1913938809007,
+				"y": 377.423130288229
 			},
 			"selected": false,
 			"type": "capsule"
@@ -104,17 +121,29 @@
 			},
 			"id": "capsule_dynamicrouting_encoding_plot_4",
 			"position": {
-				"x": 704.0400407873865,
-				"y": 595.2239549330337
+				"x": 710.6136140691585,
+				"y": 640.0688572813958
+			},
+			"selected": false,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "2040309f-59a7-4f6a-8ca2-00f426045b98"
+			},
+			"id": "capsule_filter_pipeline_placeholder_files_5",
+			"position": {
+				"x": 710.3945099518689,
+				"y": 1132.56945547947
 			},
 			"selected": false,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1737593886522,
+	"timestamp": 1737669507721,
 	"viewport": {
-		"x": -456.4768620430998,
-		"y": 68.03830359666176,
-		"zoom": 0.9548416217519211
+		"x": -6.7888019659617385,
+		"y": -83.50054129017917,
+		"zoom": 0.7578582832551992
 	}
 }

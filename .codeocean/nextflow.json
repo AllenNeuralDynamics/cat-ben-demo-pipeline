@@ -114,26 +114,68 @@
 			},
 			"inputs": [
 				{
-					"id": "tFr4HqLaEThGVIQF",
-					"source_id": "capsule_dynamicrouting_encoding_fit_2",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/",
-					"target_path": "full/",
-					"collect": true
-				},
-				{
 					"id": "48YwlR0xQeoTwbRH",
 					"source_id": "capsule_dynamicrouting_encoding_fit_3",
 					"type": "capsule",
 					"name": "dynamicrouting-encoding-fit",
 					"source_path": "outputs/",
-					"target_path": "reduced/",
+					"target_path": "outputs/",
+					"collect": true
+				},
+				{
+					"id": "tFr4HqLaEThGVIQF",
+					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"source_path": "outputs/",
+					"target_path": "outputs/",
+					"collect": true
+				}
+			]
+		},
+		{
+			"name": "capsule_filter_pipeline_placeholder_files_5",
+			"capsule": {
+				"id": "2040309f-59a7-4f6a-8ca2-00f426045b98",
+				"name": "filter-pipeline-placeholder-files",
+				"slug": "5612245",
+				"commit": "3862d569fc492ca7aac08da72311230092658241",
+				"image_tag": "4a71b472a0099a61dae2362d0459ee2a"
+			},
+			"resources": {
+				"cpus": 1,
+				"memory": 8
+			},
+			"inputs": [
+				{
+					"id": "HJ0gNr6PG78FQvEi",
+					"source_id": "capsule_dynamicrouting_encoding_plot_4",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-plot",
+					"source_path": "counts.html",
+					"collect": true
+				},
+				{
+					"id": "uUXZt1IqlX2DEYfR",
+					"source_id": "capsule_dynamicrouting_encoding_fit_3",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"source_path": "outputs/",
+					"target_path": "outputs/",
+					"collect": true
+				},
+				{
+					"id": "uFSqGvYqh4sbLmtW",
+					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"type": "capsule",
+					"name": "dynamicrouting-encoding-fit",
+					"source_path": "outputs/",
+					"target_path": "outputs/",
 					"collect": true
 				}
 			],
 			"results": {
-				"id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7"
+				"id": "2040309f-59a7-4f6a-8ca2-00f426045b98"
 			}
 		}
 	]
