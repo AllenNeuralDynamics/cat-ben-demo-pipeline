@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:c66b2658a26044fc703eabb79120b3a23da88707344c5a90352a585190c5ec95
+// hash:sha256:bd498115cf922495e65daebea5c23530f4d797725a529e61e7e2ce192807c3d9
 
 nextflow.enable.dsl = 1
 
@@ -15,8 +15,8 @@ capsule_dynamicrouting_encoding_fit_2_to_capsule_filter_pipeline_placeholder_fil
 
 // capsule - dynamicrouting-encoding-io
 process capsule_dynamicrouting_encoding_io_1 {
-	tag 'capsule-9348254'
-	container "$REGISTRY_HOST/capsule/82c400eb-a0b8-45b4-abce-43db82b77478:95b2a8c7192a5e2a894b5703fc8c8d57"
+	tag 'capsule-3423432'
+	container "$REGISTRY_HOST/capsule/d9151629-d8e8-4e5d-b09f-dd763e4694b2"
 
 	cpus 1
 	memory '8 GB'
@@ -33,7 +33,7 @@ process capsule_dynamicrouting_encoding_io_1 {
 	#!/usr/bin/env bash
 	set -e
 
-	export CO_CAPSULE_ID=82c400eb-a0b8-45b4-abce-43db82b77478
+	export CO_CAPSULE_ID=d9151629-d8e8-4e5d-b09f-dd763e4694b2
 	export CO_CPUS=1
 	export CO_MEMORY=8589934592
 
@@ -47,8 +47,7 @@ process capsule_dynamicrouting_encoding_io_1 {
 	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.261/session_table.csv" "capsule/data/session_table.csv" # id: b59511ab-e888-4f96-8772-5627adc12e31
 
 	echo "[${task.tag}] cloning git repo..."
-	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-9348254.git" capsule-repo
-	git -C capsule-repo checkout ee8eb2966b709214d271604b368faceacc2b0564 --quiet
+	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-3423432.git" capsule-repo
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -64,7 +63,7 @@ process capsule_dynamicrouting_encoding_io_1 {
 // capsule - dynamicrouting-encoding-fit
 process capsule_dynamicrouting_encoding_fit_2 {
 	tag 'capsule-5184476'
-	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973:95b2a8c7192a5e2a894b5703fc8c8d57"
+	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973"
 
 	cpus 1
 	memory '8 GB'
@@ -109,7 +108,7 @@ process capsule_dynamicrouting_encoding_fit_2 {
 // capsule - dynamicrouting-encoding-fit
 process capsule_dynamicrouting_encoding_fit_3 {
 	tag 'capsule-5184476'
-	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973:95b2a8c7192a5e2a894b5703fc8c8d57"
+	container "$REGISTRY_HOST/capsule/3f98e032-f938-4959-8577-a28f814dd973"
 
 	cpus 1
 	memory '8 GB'
@@ -154,7 +153,7 @@ process capsule_dynamicrouting_encoding_fit_3 {
 // capsule - dynamicrouting-encoding-plot
 process capsule_dynamicrouting_encoding_plot_4 {
 	tag 'capsule-8924646'
-	container "$REGISTRY_HOST/capsule/0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7:247f7a61917d90455bc5e86956cc69f0"
+	container "$REGISTRY_HOST/capsule/0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7"
 
 	cpus 1
 	memory '8 GB'
@@ -198,7 +197,7 @@ process capsule_dynamicrouting_encoding_plot_4 {
 // capsule - filter-pipeline-placeholder-files
 process capsule_filter_pipeline_placeholder_files_5 {
 	tag 'capsule-5612245'
-	container "$REGISTRY_HOST/capsule/2040309f-59a7-4f6a-8ca2-00f426045b98:4a71b472a0099a61dae2362d0459ee2a"
+	container "$REGISTRY_HOST/capsule/2040309f-59a7-4f6a-8ca2-00f426045b98"
 
 	cpus 1
 	memory '8 GB'

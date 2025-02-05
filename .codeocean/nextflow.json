@@ -4,11 +4,9 @@
 		{
 			"name": "capsule_dynamicrouting_encoding_io_1",
 			"capsule": {
-				"id": "82c400eb-a0b8-45b4-abce-43db82b77478",
+				"id": "d9151629-d8e8-4e5d-b09f-dd763e4694b2",
 				"name": "dynamicrouting-encoding-io",
-				"slug": "9348254",
-				"commit": "ee8eb2966b709214d271604b368faceacc2b0564",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
+				"slug": "3423432",
 				"app_panel": true
 			},
 			"resources": {
@@ -48,7 +46,6 @@
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
 				"commit": "13c37cfa40784c24d86fed4e72d99692737b853f",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -73,7 +70,6 @@
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "5184476",
 				"commit": "13c37cfa40784c24d86fed4e72d99692737b853f",
-				"image_tag": "95b2a8c7192a5e2a894b5703fc8c8d57",
 				"app_panel": true
 			},
 			"resources": {
@@ -105,8 +101,7 @@
 				"id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7",
 				"name": "dynamicrouting-encoding-plot",
 				"slug": "8924646",
-				"commit": "c4133ae4039a66ea4640b41a7427e6f8c9bcc061",
-				"image_tag": "247f7a61917d90455bc5e86956cc69f0"
+				"commit": "c4133ae4039a66ea4640b41a7427e6f8c9bcc061"
 			},
 			"resources": {
 				"cpus": 1,
@@ -139,8 +134,7 @@
 				"id": "2040309f-59a7-4f6a-8ca2-00f426045b98",
 				"name": "filter-pipeline-placeholder-files",
 				"slug": "5612245",
-				"commit": "3862d569fc492ca7aac08da72311230092658241",
-				"image_tag": "4a71b472a0099a61dae2362d0459ee2a"
+				"commit": "3862d569fc492ca7aac08da72311230092658241"
 			},
 			"resources": {
 				"cpus": 1,

@@ -2,19 +2,16 @@
 	"edges": [
 		{
 			"id": "reactflow__edge-b59511ab-e888-4f96-8772-5627adc12e31-capsule_dynamicrouting_encoding_io_1",
-			"selected": false,
 			"source": "b59511ab-e888-4f96-8772-5627adc12e31",
 			"target": "capsule_dynamicrouting_encoding_io_1"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_io_1-capsule_dynamicrouting_encoding_fit_2",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_io_1",
 			"target": "capsule_dynamicrouting_encoding_fit_2"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_io_1-capsule_dynamicrouting_encoding_fit_3",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_io_1",
 			"target": "capsule_dynamicrouting_encoding_fit_3"
 		},
@@ -62,18 +59,6 @@
 	],
 	"nodes": [
 		{
-			"data": {
-				"capsule_id": "82c400eb-a0b8-45b4-abce-43db82b77478"
-			},
-			"id": "capsule_dynamicrouting_encoding_io_1",
-			"position": {
-				"x": 680.2204353106795,
-				"y": 85.16975703728338
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
 			"id": "results",
 			"position": {
 				"x": 756.5504242917536,
@@ -100,7 +85,7 @@
 				"x": 308.7595803149575,
 				"y": 377.2790824751836
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -109,10 +94,10 @@
 			},
 			"id": "capsule_dynamicrouting_encoding_fit_3",
 			"position": {
-				"x": 1099.1913938809007,
-				"y": 377.423130288229
+				"x": 1084.668747120252,
+				"y": 403.5639387769973
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -138,12 +123,19 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "d9151629-d8e8-4e5d-b09f-dd763e4694b2"
+			},
+			"id": "capsule_dynamicrouting_encoding_io_1",
+			"position": {
+				"x": 680.2204353106795,
+				"y": 85.16975703728338
+			},
+			"selected": true,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1737669507721,
-	"viewport": {
-		"x": -6.7888019659617385,
-		"y": -83.50054129017917,
-		"zoom": 0.7578582832551992
-	}
+	"timestamp": 1738784119890
 }
