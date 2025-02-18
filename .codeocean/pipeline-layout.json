@@ -82,10 +82,10 @@
 			},
 			"id": "capsule_dynamicrouting_encoding_fit_2",
 			"position": {
-				"x": 308.7595803149575,
-				"y": 377.2790824751836
+				"x": 299.5230249395472,
+				"y": 378.59859038595636
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -97,7 +97,7 @@
 				"x": 1084.668747120252,
 				"y": 403.5639387769973
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		},
 		{
@@ -130,12 +130,17 @@
 			},
 			"id": "capsule_dynamicrouting_encoding_io_1",
 			"position": {
-				"x": 680.2204353106795,
-				"y": 85.16975703728338
+				"x": 665.7058482921775,
+				"y": 61.41861464337126
 			},
-			"selected": true,
+			"selected": false,
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1738806739179
+	"timestamp": 1739838256478,
+	"viewport": {
+		"x": -55.401208336506215,
+		"y": 50.89518955413121,
+		"zoom": 0.757858283255199
+	}
 }
