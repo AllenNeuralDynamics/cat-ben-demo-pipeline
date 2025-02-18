@@ -126,7 +126,7 @@
 		},
 		{
 			"data": {
-				"capsule_id": "d9151629-d8e8-4e5d-b09f-dd763e4694b2"
+				"capsule_id": "cb87d42d-4ad6-4c23-9a90-6591d5dd0531"
 			},
 			"id": "capsule_dynamicrouting_encoding_io_1",
 			"position": {
@@ -137,5 +137,5 @@
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1738784119890
+	"timestamp": 1738806739179
 }
