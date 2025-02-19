@@ -17,31 +17,26 @@
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_fit_3",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_2",
 			"target": "capsule_dynamicrouting_encoding_fit_3"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_plot_4",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_2",
 			"target": "capsule_dynamicrouting_encoding_plot_4"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-capsule_dynamicrouting_encoding_plot_4",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_3",
 			"target": "capsule_dynamicrouting_encoding_plot_4"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_filter_pipeline_placeholder_files_5",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_2",
 			"target": "capsule_filter_pipeline_placeholder_files_5"
 		},
 		{
 			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-capsule_filter_pipeline_placeholder_files_5",
-			"selected": false,
 			"source": "capsule_dynamicrouting_encoding_fit_3",
 			"target": "capsule_filter_pipeline_placeholder_files_5"
 		},
@@ -78,30 +73,6 @@
 		},
 		{
 			"data": {
-				"capsule_id": "3f98e032-f938-4959-8577-a28f814dd973"
-			},
-			"id": "capsule_dynamicrouting_encoding_fit_2",
-			"position": {
-				"x": 299.5230249395472,
-				"y": 378.59859038595636
-			},
-			"selected": true,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "3f98e032-f938-4959-8577-a28f814dd973"
-			},
-			"id": "capsule_dynamicrouting_encoding_fit_3",
-			"position": {
-				"x": 1084.668747120252,
-				"y": 403.5639387769973
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
 				"capsule_id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7"
 			},
 			"id": "capsule_dynamicrouting_encoding_plot_4",
@@ -135,12 +106,31 @@
 			},
 			"selected": false,
 			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "62e5b977-b823-422d-869f-53f6aa6528b2"
+			},
+			"id": "capsule_dynamicrouting_encoding_fit_2",
+			"position": {
+				"x": 302.16204076109295,
+				"y": 377.27908247518343
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "62e5b977-b823-422d-869f-53f6aa6528b2"
+			},
+			"id": "capsule_dynamicrouting_encoding_fit_3",
+			"position": {
+				"x": 1084.668747120252,
+				"y": 403.5639387769973
+			},
+			"selected": true,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1739838256478,
-	"viewport": {
-		"x": -55.401208336506215,
-		"y": 50.89518955413121,
-		"zoom": 0.757858283255199
-	}
+	"timestamp": 1739848375797
 }
