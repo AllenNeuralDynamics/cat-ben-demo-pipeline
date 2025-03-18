@@ -7,7 +7,7 @@
 				"id": "cb87d42d-4ad6-4c23-9a90-6591d5dd0531",
 				"name": "dynamicrouting-encoding-io",
 				"slug": "4556585",
-				"commit": "8225e9178263020e0dac727821294a6ea4ee9142",
+				"commit": "cce348e148cad70b32cbf2e62d0d75bc0f8255bd",
 				"app_panel": true
 			},
 			"resources": {
@@ -17,10 +17,26 @@
 			"inputs": [
 				{
 					"id": "dvHRSh17wDWGIk8d",
-					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
+					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
 					"type": "dataset",
-					"name": "dynamicrouting_datacube_v0.0.265",
-					"source_path": "dynamicrouting_datacube_v0.0.265/"
+					"name": "dynamicrouting_datacube_v0.0.261",
+					"source_path": "dynamicrouting_datacube_v0.0.261/nwb"
+				},
+				{
+					"id": "yddswb1sDe4vDa7Q",
+					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.261",
+					"source_path": "dynamicrouting_datacube_v0.0.261/session_table.parquet",
+					"collect": true
+				},
+				{
+					"id": "YEY0mtXFNu8B5xNn",
+					"source_id": "b59511ab-e888-4f96-8772-5627adc12e31",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.261",
+					"source_path": "dynamicrouting_datacube_v0.0.261/session_table.csv",
+					"collect": true
 				}
 			]
 		},
@@ -30,7 +46,7 @@
 				"id": "62e5b977-b823-422d-869f-53f6aa6528b2",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "8024325",
-				"commit": "49650e28c34bd867ec3f721ecc5e5d89b93c4ef8",
+				"commit": "fec1f344e70f554f7b0eca575325c2d1b765c8ab",
 				"app_panel": true
 			},
 			"resources": {
@@ -54,7 +70,7 @@
 				"id": "62e5b977-b823-422d-869f-53f6aa6528b2",
 				"name": "dynamicrouting-encoding-fit",
 				"slug": "8024325",
-				"commit": "49650e28c34bd867ec3f721ecc5e5d89b93c4ef8",
+				"commit": "fec1f344e70f554f7b0eca575325c2d1b765c8ab",
 				"app_panel": true
 			},
 			"resources": {
