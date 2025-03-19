@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:65e9fb09d73b8d889dde595972e72df0c457fb6582b4b657e205dc1b09dd914f
+// hash:sha256:69a3b7133471b4d9f6d90fa9fb867c0c378b2ff380f8e05d622a89fd705fddd7
 
 nextflow.enable.dsl = 1
 
@@ -35,7 +35,7 @@ process capsule_cat_demo_param_dispatch_1 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8803024.git" capsule-repo
-	git -C capsule-repo checkout ffcac7c0ad358011ee03b7b8b4759c29b69120fc --quiet
+	git -C capsule-repo checkout b85fc5482fd962a7fd7259895d0efb1143f7ed4c --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -76,8 +76,7 @@ process capsule_cat_demo_processing_2 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/nwb" "capsule/data/nwb" # id: 45fc9444-71eb-4916-8673-2fba905985a0
-	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/consolidated" "capsule/data/consolidated" # id: 45fc9444-71eb-4916-8673-2fba905985a0
+	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265" "capsule/data/dynamicrouting_datacube_v0.0.265" # id: 45fc9444-71eb-4916-8673-2fba905985a0
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-0173797.git" capsule-repo
