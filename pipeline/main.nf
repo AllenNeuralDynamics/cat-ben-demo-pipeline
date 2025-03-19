@@ -1,11 +1,10 @@
 #!/usr/bin/env nextflow
-// hash:sha256:52195522a3754a4760c570e82a997101a16b31ec816511a9f8c226ed1d284370
+// hash:sha256:822403b82bd9d4f19aafd0384fc10b3e0967e3c0dc1045c8b74e77c1cf0c41a8
 
 nextflow.enable.dsl = 1
 
-dynamicrouting_datacube_v0_0_265_to_cat_demo_param_dispatch_1 = channel.fromPath("../data/dynamicrouting_datacube_v0.0.265/nwb/*", type: 'any', relative: true)
-capsule_cat_demo_param_dispatch_1_to_capsule_cat_demo_processing_2_2 = channel.create()
-capsule_cat_demo_processing_2_to_capsule_filter_pipeline_placeholder_files_5_3 = channel.create()
+capsule_cat_demo_param_dispatch_1_to_capsule_cat_demo_processing_2_1 = channel.create()
+capsule_cat_demo_processing_2_to_capsule_filter_pipeline_placeholder_files_5_2 = channel.create()
 
 // capsule - cat-demo-param-dispatch
 process capsule_cat_demo_param_dispatch_1 {
@@ -15,11 +14,8 @@ process capsule_cat_demo_param_dispatch_1 {
 	cpus 1
 	memory '4 GB'
 
-	input:
-	val path1 from dynamicrouting_datacube_v0_0_265_to_cat_demo_param_dispatch_1
-
 	output:
-	path 'capsule/results/parameters/*' into capsule_cat_demo_param_dispatch_1_to_capsule_cat_demo_processing_2_2
+	path 'capsule/results/parameters/*' into capsule_cat_demo_param_dispatch_1_to_capsule_cat_demo_processing_2_1
 
 	script:
 	"""
@@ -34,13 +30,15 @@ process capsule_cat_demo_param_dispatch_1 {
 	mkdir -p capsule/data && ln -s \$PWD/capsule/data /data
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
+	mkdir -p capsule/data/nwb
+	mkdir -p capsule/data/consolidated
 
-	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/nwb/$path1" "capsule/data/$path1" # id: 45fc9444-71eb-4916-8673-2fba905985a0
-	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/consolidated" "capsule/data/consolidated" # id: 45fc9444-71eb-4916-8673-2fba905985a0
+	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/nwb" "capsule/data/nwb/nwb" # id: 45fc9444-71eb-4916-8673-2fba905985a0
+	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/consolidated" "capsule/data/consolidated/consolidated" # id: 45fc9444-71eb-4916-8673-2fba905985a0
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-8803024.git" capsule-repo
-	git -C capsule-repo checkout cbfc908bc00411dac67f7d943a5d0222b7ebc5a1 --quiet
+	git -C capsule-repo checkout 759bbd96904e16b8344cc2f150ffcff498011482 --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
@@ -62,10 +60,10 @@ process capsule_cat_demo_processing_2 {
 	memory '4 GB'
 
 	input:
-	path 'capsule/data/parameters/' from capsule_cat_demo_param_dispatch_1_to_capsule_cat_demo_processing_2_2
+	path 'capsule/data/parameters/' from capsule_cat_demo_param_dispatch_1_to_capsule_cat_demo_processing_2_1.flatten()
 
 	output:
-	path 'capsule/results/outputs/*' into capsule_cat_demo_processing_2_to_capsule_filter_pipeline_placeholder_files_5_3
+	path 'capsule/results/outputs/*' into capsule_cat_demo_processing_2_to_capsule_filter_pipeline_placeholder_files_5_2
 
 	script:
 	"""
@@ -110,7 +108,7 @@ process capsule_filter_pipeline_placeholder_files_5 {
 	publishDir "$RESULTS_PATH", saveAs: { filename -> new File(filename).getName() }
 
 	input:
-	path 'capsule/data/outputs/' from capsule_cat_demo_processing_2_to_capsule_filter_pipeline_placeholder_files_5_3.collect()
+	path 'capsule/data/outputs/' from capsule_cat_demo_processing_2_to_capsule_filter_pipeline_placeholder_files_5_2.collect()
 
 	output:
 	path 'capsule/results/*'

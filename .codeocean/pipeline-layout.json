@@ -19,6 +19,7 @@
 		},
 		{
 			"id": "xy-edge__45fc9444-71eb-4916-8673-2fba905985a0-capsule_cat_demo_param_dispatch_1",
+			"selected": false,
 			"source": "45fc9444-71eb-4916-8673-2fba905985a0",
 			"target": "capsule_cat_demo_param_dispatch_1"
 		},
@@ -57,7 +58,7 @@
 				"x": -23.22114716654505,
 				"y": 149.8011030441525
 			},
-			"selected": true,
+			"selected": false,
 			"type": "dataset"
 		},
 		{
@@ -66,10 +67,10 @@
 			},
 			"id": "capsule_cat_demo_param_dispatch_1",
 			"position": {
-				"x": 140.21209387952103,
-				"y": 307.81425225192856
+				"x": 214.045218540149,
+				"y": 303.0508248544687
 			},
-			"selected": false,
+			"selected": true,
 			"type": "capsule"
 		},
 		{
@@ -85,10 +86,10 @@
 			"type": "capsule"
 		}
 	],
-	"timestamp": 1742362877770,
+	"timestamp": 1742365161938,
 	"viewport": {
-		"x": 242.71915424446664,
-		"y": 50.32677691136948,
-		"zoom": 0.3
+		"x": 251.87786353283326,
+		"y": -184.73775095973554,
+		"zoom": 0.8397314929441414
 	}
 }
