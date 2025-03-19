@@ -2,18 +2,17 @@
 	"version": 1,
 	"processes": [
 		{
-			"name": "capsule_dynamicrouting_encoding_io_1",
+			"name": "capsule_cat_demo_param_dispatch_1",
 			"capsule": {
-				"id": "cb87d42d-4ad6-4c23-9a90-6591d5dd0531",
-				"name": "dynamicrouting-encoding-io",
-				"slug": "4556585",
-				"commit": "00025b9c8da399987144342fe8585c21dcf1952f",
-				"image_tag": "45a7854dbf63920bb0077282d528a7ac",
+				"id": "a6567731-a2d4-41ff-bb97-d5e6799c2c4b",
+				"name": "cat-demo-param-dispatch",
+				"slug": "8803024",
+				"commit": "ede5707dfdaf9a43cdb58ed47137db0862cbb179",
 				"app_panel": true
 			},
 			"resources": {
-				"cpus": 4,
-				"memory": 32
+				"cpus": 1,
+				"memory": 4
 			},
 			"inputs": [
 				{
@@ -24,112 +23,36 @@
 					"source_path": "dynamicrouting_datacube_v0.0.265/nwb/"
 				},
 				{
-					"id": "yddswb1sDe4vDa7Q",
+					"id": "CfFysi7YS4dveOMp",
 					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
 					"type": "dataset",
 					"name": "dynamicrouting_datacube_v0.0.265",
-					"source_path": "dynamicrouting_datacube_v0.0.265/session_table.parquet",
-					"collect": true
-				},
-				{
-					"id": "YEY0mtXFNu8B5xNn",
-					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
-					"type": "dataset",
-					"name": "dynamicrouting_datacube_v0.0.265",
-					"source_path": "dynamicrouting_datacube_v0.0.265/session_table.csv",
+					"source_path": "dynamicrouting_datacube_v0.0.265/consolidated/",
+					"target_path": "consolidated",
 					"collect": true
 				}
 			]
 		},
 		{
-			"name": "capsule_dynamicrouting_encoding_fit_2",
+			"name": "capsule_cat_demo_processing_2",
 			"capsule": {
-				"id": "62e5b977-b823-422d-869f-53f6aa6528b2",
-				"name": "dynamicrouting-encoding-fit",
-				"slug": "8024325",
-				"commit": "fec1f344e70f554f7b0eca575325c2d1b765c8ab",
-				"image_tag": "cc4b81123ee9dee96a1c171eff0cdf72",
+				"id": "0cd660e2-b9da-466c-a498-26cc0736f4d9",
+				"name": "cat-demo-processing",
+				"slug": "0173797",
+				"commit": "33906a009874c8798885f50bb68d6031c5a24b18",
 				"app_panel": true
 			},
 			"resources": {
-				"cpus": 4,
-				"memory": 32
+				"cpus": 1,
+				"memory": 4
 			},
 			"inputs": [
 				{
 					"id": "64HkDqeeyjZKihZM",
-					"source_id": "capsule_dynamicrouting_encoding_io_1",
+					"source_id": "capsule_cat_demo_param_dispatch_1",
 					"type": "capsule",
-					"name": "dynamicrouting-encoding-io",
-					"source_path": "full/",
+					"name": "cat-demo-param-dispatch",
 					"flatten": true
-				}
-			]
-		},
-		{
-			"name": "capsule_dynamicrouting_encoding_fit_3",
-			"capsule": {
-				"id": "62e5b977-b823-422d-869f-53f6aa6528b2",
-				"name": "dynamicrouting-encoding-fit",
-				"slug": "8024325",
-				"commit": "fec1f344e70f554f7b0eca575325c2d1b765c8ab",
-				"image_tag": "cc4b81123ee9dee96a1c171eff0cdf72",
-				"app_panel": true
-			},
-			"resources": {
-				"cpus": 4,
-				"memory": 32
-			},
-			"inputs": [
-				{
-					"id": "G7X39UKZ141tFgWJ",
-					"source_id": "capsule_dynamicrouting_encoding_fit_2",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/",
-					"collect": true
-				},
-				{
-					"id": "0CDMIDK9x5pd8Y8p",
-					"source_id": "capsule_dynamicrouting_encoding_io_1",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-io",
-					"source_path": "reduced/",
-					"flatten": true
-				}
-			]
-		},
-		{
-			"name": "capsule_dynamicrouting_encoding_plot_4",
-			"capsule": {
-				"id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7",
-				"name": "dynamicrouting-encoding-plot",
-				"slug": "8924646",
-				"commit": "6c8cdefc0c0ed59b407bc710585823c6c1f26485",
-				"image_tag": "247f7a61917d90455bc5e86956cc69f0"
-			},
-			"resources": {
-				"cpus": 1,
-				"memory": 8
-			},
-			"inputs": [
-				{
-					"id": "48YwlR0xQeoTwbRH",
-					"source_id": "capsule_dynamicrouting_encoding_fit_3",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/",
-					"target_path": "outputs/",
-					"collect": true
-				},
-				{
-					"id": "tFr4HqLaEThGVIQF",
-					"source_id": "capsule_dynamicrouting_encoding_fit_2",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/",
-					"target_path": "outputs/",
-					"collect": true
 				}
 			]
 		},
@@ -139,8 +62,7 @@
 				"id": "2040309f-59a7-4f6a-8ca2-00f426045b98",
 				"name": "filter-pipeline-placeholder-files",
 				"slug": "5612245",
-				"commit": "3862d569fc492ca7aac08da72311230092658241",
-				"image_tag": "4a71b472a0099a61dae2362d0459ee2a"
+				"commit": "3862d569fc492ca7aac08da72311230092658241"
 			},
 			"resources": {
 				"cpus": 1,
@@ -148,27 +70,10 @@
 			},
 			"inputs": [
 				{
-					"id": "HJ0gNr6PG78FQvEi",
-					"source_id": "capsule_dynamicrouting_encoding_plot_4",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-plot",
-					"source_path": "counts.html",
-					"collect": true
-				},
-				{
-					"id": "uUXZt1IqlX2DEYfR",
-					"source_id": "capsule_dynamicrouting_encoding_fit_3",
-					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
-					"source_path": "outputs/",
-					"target_path": "outputs/",
-					"collect": true
-				},
-				{
 					"id": "uFSqGvYqh4sbLmtW",
-					"source_id": "capsule_dynamicrouting_encoding_fit_2",
+					"source_id": "capsule_cat_demo_processing_2",
 					"type": "capsule",
-					"name": "dynamicrouting-encoding-fit",
+					"name": "cat-demo-processing",
 					"source_path": "outputs/",
 					"target_path": "outputs/",
 					"collect": true

@@ -1,44 +1,13 @@
 {
 	"edges": [
 		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_io_1-capsule_dynamicrouting_encoding_fit_2",
-			"source": "capsule_dynamicrouting_encoding_io_1",
-			"target": "capsule_dynamicrouting_encoding_fit_2"
+			"id": "xy-edge__capsule_cat_demo_param_dispatch_1-capsule_cat_demo_processing_2",
+			"source": "capsule_cat_demo_param_dispatch_1",
+			"target": "capsule_cat_demo_processing_2"
 		},
 		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_io_1-capsule_dynamicrouting_encoding_fit_3",
-			"source": "capsule_dynamicrouting_encoding_io_1",
-			"target": "capsule_dynamicrouting_encoding_fit_3"
-		},
-		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_fit_3",
-			"source": "capsule_dynamicrouting_encoding_fit_2",
-			"target": "capsule_dynamicrouting_encoding_fit_3"
-		},
-		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_dynamicrouting_encoding_plot_4",
-			"source": "capsule_dynamicrouting_encoding_fit_2",
-			"target": "capsule_dynamicrouting_encoding_plot_4"
-		},
-		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-capsule_dynamicrouting_encoding_plot_4",
-			"source": "capsule_dynamicrouting_encoding_fit_3",
-			"target": "capsule_dynamicrouting_encoding_plot_4"
-		},
-		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_2-capsule_filter_pipeline_placeholder_files_5",
-			"source": "capsule_dynamicrouting_encoding_fit_2",
-			"target": "capsule_filter_pipeline_placeholder_files_5"
-		},
-		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_fit_3-capsule_filter_pipeline_placeholder_files_5",
-			"source": "capsule_dynamicrouting_encoding_fit_3",
-			"target": "capsule_filter_pipeline_placeholder_files_5"
-		},
-		{
-			"id": "xy-edge__capsule_dynamicrouting_encoding_plot_4-capsule_filter_pipeline_placeholder_files_5",
-			"selected": false,
-			"source": "capsule_dynamicrouting_encoding_plot_4",
+			"id": "xy-edge__capsule_cat_demo_processing_2-capsule_filter_pipeline_placeholder_files_5",
+			"source": "capsule_cat_demo_processing_2",
 			"target": "capsule_filter_pipeline_placeholder_files_5"
 		},
 		{
@@ -47,32 +16,20 @@
 			"target": "results"
 		},
 		{
-			"id": "xy-edge__45fc9444-71eb-4916-8673-2fba905985a0-capsule_dynamicrouting_encoding_io_1",
+			"id": "xy-edge__45fc9444-71eb-4916-8673-2fba905985a0-capsule_cat_demo_param_dispatch_1",
 			"source": "45fc9444-71eb-4916-8673-2fba905985a0",
-			"target": "capsule_dynamicrouting_encoding_io_1"
+			"target": "capsule_cat_demo_param_dispatch_1"
 		}
 	],
 	"nodes": [
 		{
 			"id": "results",
 			"position": {
-				"x": 756.5504242917536,
-				"y": 1358.551363533942
+				"x": 649.2908590368204,
+				"y": 1012.9372088236018
 			},
 			"selected": false,
 			"type": "results"
-		},
-		{
-			"data": {
-				"capsule_id": "0db4a11f-34ab-4c8c-b8cb-384e0af8c6b7"
-			},
-			"id": "capsule_dynamicrouting_encoding_plot_4",
-			"position": {
-				"x": 710.6136140691585,
-				"y": 640.0688572813958
-			},
-			"selected": false,
-			"type": "capsule"
 		},
 		{
 			"data": {
@@ -80,44 +37,8 @@
 			},
 			"id": "capsule_filter_pipeline_placeholder_files_5",
 			"position": {
-				"x": 710.3945099518689,
-				"y": 1132.56945547947
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "cb87d42d-4ad6-4c23-9a90-6591d5dd0531"
-			},
-			"id": "capsule_dynamicrouting_encoding_io_1",
-			"position": {
-				"x": 587.7058482921775,
-				"y": 98.41861464337126
-			},
-			"selected": true,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "62e5b977-b823-422d-869f-53f6aa6528b2"
-			},
-			"id": "capsule_dynamicrouting_encoding_fit_2",
-			"position": {
-				"x": 302.16204076109295,
-				"y": 377.27908247518343
-			},
-			"selected": false,
-			"type": "capsule"
-		},
-		{
-			"data": {
-				"capsule_id": "62e5b977-b823-422d-869f-53f6aa6528b2"
-			},
-			"id": "capsule_dynamicrouting_encoding_fit_3",
-			"position": {
-				"x": 1058.552230221368,
-				"y": 368.74191624515225
+				"x": 587.7441596925948,
+				"y": 752.2648479816403
 			},
 			"selected": false,
 			"type": "capsule"
@@ -128,8 +49,38 @@
 				"x": 625.183804466306,
 				"y": -90.60415570890729
 			},
+			"selected": false,
 			"type": "dataset"
+		},
+		{
+			"data": {
+				"capsule_id": "a6567731-a2d4-41ff-bb97-d5e6799c2c4b"
+			},
+			"id": "capsule_cat_demo_param_dispatch_1",
+			"position": {
+				"x": 595.908697143582,
+				"y": 135.12276630528498
+			},
+			"selected": true,
+			"type": "capsule"
+		},
+		{
+			"data": {
+				"capsule_id": "0cd660e2-b9da-466c-a498-26cc0736f4d9"
+			},
+			"id": "capsule_cat_demo_processing_2",
+			"position": {
+				"x": 584.8287074277595,
+				"y": 411.94574914185006
+			},
+			"selected": false,
+			"type": "capsule"
 		}
 	],
-	"timestamp": 1742342043482
+	"timestamp": 1742353723764,
+	"viewport": {
+		"x": 212.29611063198269,
+		"y": 157.17105214777735,
+		"zoom": 0.5140569133280333
+	}
 }

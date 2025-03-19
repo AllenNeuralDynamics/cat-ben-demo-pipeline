@@ -1,5 +1,4 @@
 metadata_version: 1
-name: dynamicrouting-encoding-pipeline
+name: cat-demo-pipeline
 authors:
 - name: Ben Hardcastle
-- name: Shailaja Akella
