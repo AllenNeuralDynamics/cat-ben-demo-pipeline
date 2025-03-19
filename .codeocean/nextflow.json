@@ -7,7 +7,7 @@
 				"id": "a6567731-a2d4-41ff-bb97-d5e6799c2c4b",
 				"name": "cat-demo-param-dispatch",
 				"slug": "8803024",
-				"commit": "759bbd96904e16b8344cc2f150ffcff498011482",
+				"commit": "ffcac7c0ad358011ee03b7b8b4759c29b69120fc",
 				"image_tag": "f58bbcefd0550367795d0707b841eae2",
 				"app_panel": true
 			},
@@ -21,17 +21,7 @@
 					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
 					"type": "dataset",
 					"name": "dynamicrouting_datacube_v0.0.265",
-					"source_path": "dynamicrouting_datacube_v0.0.265/nwb/",
-					"target_path": "nwb/",
-					"collect": true
-				},
-				{
-					"id": "I1x798sW03qyTMVO",
-					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
-					"type": "dataset",
-					"name": "dynamicrouting_datacube_v0.0.265",
-					"source_path": "dynamicrouting_datacube_v0.0.265/consolidated/",
-					"target_path": "consolidated/",
+					"source_path": "dynamicrouting_datacube_v0.0.265/",
 					"collect": true
 				}
 			]
