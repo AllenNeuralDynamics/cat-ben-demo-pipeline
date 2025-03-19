@@ -7,7 +7,7 @@
 				"id": "cb87d42d-4ad6-4c23-9a90-6591d5dd0531",
 				"name": "dynamicrouting-encoding-io",
 				"slug": "4556585",
-				"commit": "2eb629af0ab6e8a0ad9fb4632f4c03d62f018e55",
+				"commit": "e3d7675a45b80323cd28d42992e69216ffc87e12",
 				"image_tag": "45a7854dbf63920bb0077282d528a7ac",
 				"app_panel": true
 			},
@@ -21,7 +21,7 @@
 					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
 					"type": "dataset",
 					"name": "dynamicrouting_datacube_v0.0.265",
-					"source_path": "dynamicrouting_datacube_v0.0.265/nwb"
+					"source_path": "dynamicrouting_datacube_v0.0.265/nwb/"
 				},
 				{
 					"id": "yddswb1sDe4vDa7Q",

@@ -1,9 +1,9 @@
 #!/usr/bin/env nextflow
-// hash:sha256:4f62dd154a194341701284b56d1061ade5b95ad0ba55c9ffe253a4d62ca06b2f
+// hash:sha256:c996b32e228c4671f9f9d6cae75c4a9c54b43b789004f3912ff010904c94a99b
 
 nextflow.enable.dsl = 1
 
-dynamicrouting_datacube_v0_0_265_to_dynamicrouting_encoding_io_1 = channel.fromPath("../data/dynamicrouting_datacube_v0.0.265/nwb", type: 'any', relative: true)
+dynamicrouting_datacube_v0_0_265_to_dynamicrouting_encoding_io_1 = channel.fromPath("../data/dynamicrouting_datacube_v0.0.265/nwb/*", type: 'any', relative: true)
 capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_2_2 = channel.create()
 capsule_dynamicrouting_encoding_fit_2_to_capsule_dynamicrouting_encoding_fit_3_3 = channel.create()
 capsule_dynamicrouting_encoding_io_1_to_capsule_dynamicrouting_encoding_fit_3_4 = channel.create()
@@ -42,13 +42,13 @@ process capsule_dynamicrouting_encoding_io_1 {
 	mkdir -p capsule/results && ln -s \$PWD/capsule/results /results
 	mkdir -p capsule/scratch && ln -s \$PWD/capsule/scratch /scratch
 
-	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/nwb" "capsule/data/nwb" # id: 45fc9444-71eb-4916-8673-2fba905985a0
+	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/nwb/$path1" "capsule/data/$path1" # id: 45fc9444-71eb-4916-8673-2fba905985a0
 	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/session_table.parquet" "capsule/data/session_table.parquet" # id: 45fc9444-71eb-4916-8673-2fba905985a0
 	ln -s "/tmp/data/dynamicrouting_datacube_v0.0.265/session_table.csv" "capsule/data/session_table.csv" # id: 45fc9444-71eb-4916-8673-2fba905985a0
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4556585.git" capsule-repo
-	git -C capsule-repo checkout 2eb629af0ab6e8a0ad9fb4632f4c03d62f018e55 --quiet
+	git -C capsule-repo checkout e3d7675a45b80323cd28d42992e69216ffc87e12 --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
