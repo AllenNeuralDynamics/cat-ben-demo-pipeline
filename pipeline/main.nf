@@ -1,5 +1,5 @@
 #!/usr/bin/env nextflow
-// hash:sha256:c996b32e228c4671f9f9d6cae75c4a9c54b43b789004f3912ff010904c94a99b
+// hash:sha256:4a4f00149a97da215a10b89b64c109283af49303bcea19107ab32a52ef7aa33c
 
 nextflow.enable.dsl = 1
 
@@ -48,7 +48,7 @@ process capsule_dynamicrouting_encoding_io_1 {
 
 	echo "[${task.tag}] cloning git repo..."
 	git clone "https://\$GIT_ACCESS_TOKEN@\$GIT_HOST/capsule-4556585.git" capsule-repo
-	git -C capsule-repo checkout e3d7675a45b80323cd28d42992e69216ffc87e12 --quiet
+	git -C capsule-repo checkout 00025b9c8da399987144342fe8585c21dcf1952f --quiet
 	mv capsule-repo/code capsule/code
 	rm -rf capsule-repo
 
