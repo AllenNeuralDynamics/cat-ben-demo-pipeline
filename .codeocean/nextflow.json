@@ -7,7 +7,8 @@
 				"id": "a6567731-a2d4-41ff-bb97-d5e6799c2c4b",
 				"name": "cat-demo-param-dispatch",
 				"slug": "8803024",
-				"commit": "ede5707dfdaf9a43cdb58ed47137db0862cbb179",
+				"commit": "cbfc908bc00411dac67f7d943a5d0222b7ebc5a1",
+				"image_tag": "f58bbcefd0550367795d0707b841eae2",
 				"app_panel": true
 			},
 			"resources": {
@@ -28,7 +29,6 @@
 					"type": "dataset",
 					"name": "dynamicrouting_datacube_v0.0.265",
 					"source_path": "dynamicrouting_datacube_v0.0.265/consolidated/",
-					"target_path": "consolidated",
 					"collect": true
 				}
 			]
@@ -39,7 +39,8 @@
 				"id": "0cd660e2-b9da-466c-a498-26cc0736f4d9",
 				"name": "cat-demo-processing",
 				"slug": "0173797",
-				"commit": "33906a009874c8798885f50bb68d6031c5a24b18",
+				"commit": "c93d0e5ee5e17f1c2219c4c70569523c2b35ef87",
+				"image_tag": "f58bbcefd0550367795d0707b841eae2",
 				"app_panel": true
 			},
 			"resources": {
@@ -52,7 +53,24 @@
 					"source_id": "capsule_cat_demo_param_dispatch_1",
 					"type": "capsule",
 					"name": "cat-demo-param-dispatch",
-					"flatten": true
+					"source_path": "parameters/",
+					"target_path": "parameters/"
+				},
+				{
+					"id": "qrId0Df9ABTmnHhz",
+					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.265",
+					"source_path": "dynamicrouting_datacube_v0.0.265/nwb/",
+					"collect": true
+				},
+				{
+					"id": "aZDIgWISzEZXueqp",
+					"source_id": "45fc9444-71eb-4916-8673-2fba905985a0",
+					"type": "dataset",
+					"name": "dynamicrouting_datacube_v0.0.265",
+					"source_path": "dynamicrouting_datacube_v0.0.265/consolidated/",
+					"collect": true
 				}
 			]
 		},
@@ -62,11 +80,12 @@
 				"id": "2040309f-59a7-4f6a-8ca2-00f426045b98",
 				"name": "filter-pipeline-placeholder-files",
 				"slug": "5612245",
-				"commit": "3862d569fc492ca7aac08da72311230092658241"
+				"commit": "3862d569fc492ca7aac08da72311230092658241",
+				"image_tag": "4a71b472a0099a61dae2362d0459ee2a"
 			},
 			"resources": {
 				"cpus": 1,
-				"memory": 8
+				"memory": 4
 			},
 			"inputs": [
 				{
